@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <main>
+        Enter Zip
+        <input type="text" id="enteredZip">
+        <button id="btn">Get Weather</button>
+        <div id="city"></div>
+        <div id="state"></div>
+        <div id="country"></div>
+        <div id="fulltime"></div>
+        <div id="weatherBanner"></div>
+        <div id="humidity"></div>
+    </main>
+
+    <script type='text/javascript' src='./config.js'></script>
+    <script src="./main.js"></script>
+    <script>
+        document.getElementById('enteredZip').onfocus = function() {
+            if (document.getElementById('enteredZip').value > 0) {
+                window.location.reload(true)
+            }
+            console.log('22222')
+        }
+
+        document.getElementById('btn').onclick = function() {
+                console.log('hereeee');
+                weather();
+        }
+    </script>
+</body>
+</html>
