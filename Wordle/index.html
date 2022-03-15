@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Wordle</title>
+</head>
+<body>
+    
+    <main>      
+        <input type="text" data="" id="a-1" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-2" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-3" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-4" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-5" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+
+        <input type="text" data="" id="a-6" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-7" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-8" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-9" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-10" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+
+        <input type="text" data="" id="a-11" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-12" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-13" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-14" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-15" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+
+        <input type="text" data="" id="a-16" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-17" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-18" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-19" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-20" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+
+        <input type="text" data="" id="a-21" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-22" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-23" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-24" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-25" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+
+        <input type="text" data="" id="a-26" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-27" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-28" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-29" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+        <input type="text" data="" id="a-30" class="cube" onfocusout="reply_click(this.id)" maxlength="1"/>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./wronglocation.js"></script>
+    <script src="./main.js"></script>
+    <script src="./words.js"></script>
+<script>
+    $(document).ready(function(){
+        $('input').on("input", function(){
+            if($(this).val().length==$(this).attr("maxlength")){
+                $(this).next().focus();
+            }
+        });
+    });
+
+</script>
+</body>
+</html>
